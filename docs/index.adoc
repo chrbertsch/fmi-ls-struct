@@ -1,4 +1,5 @@
-= Layered Standard for Structured Data
+= FMI Layered Standard for Structured Data (FMI-LS-STRUCT)
+
 :sectnums:
 :sectnumlevels: 5
 :toc: left
