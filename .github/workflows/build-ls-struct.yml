@@ -8,7 +8,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build-ls-ref:
+  build-ls-struct:
+    name: Build Layered Standard Struct
 
     runs-on: ubuntu-24.04
 
