@@ -24,7 +24,7 @@ After this a demo from different SiL tool vendors (Akkodis, Altair, AVL, Bosch, 
 ## Repository Structure
 
 - `docs` -- Sources of the specification document
-- `schema` -- XSD schema for this FMI Layered
+- `schema` -- XSD schema for this FMI Layered Standard
 
 ## Copyright and License
 
