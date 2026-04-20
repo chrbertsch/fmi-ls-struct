@@ -137,7 +137,8 @@ The indices latexmath:[1, \dots, n] are the serialization indices of the nonscal
 These indices are not related to the indices of the domain arrays.
 
 `org.fmi-standard.fmi-ls-struct.map.codomain`::
-For each of the represented points in the domain set, the values to which they are mapped are represented.
+For each of the represented points in the domain set, the values to which they are mapped are provided.
+The shape of this variable is grid-type-specific: for a rectilinear grid it is an n-dimensional array (one dimension per domain axis), while for an irregular grid it is a 1-dimensional array (one entry per sample point).
 +
 NOTE: There can be multiple terminal member variables with `variableKind` `codomain` to represent multiple maps in one terminal.
 
@@ -255,8 +256,6 @@ For each of the m dimensions of the codomain of the lookup table, a 1-dimensiona
 
 For domains latexmath:[x=[x_1, x_2, \dots, x_n\], y=[y_1, y_2, \dots, y_n\], z=[z_1, z_2, \dots, z_n\], \dots]
 and codomains latexmath:[u=[u_1, u_2, \dots, u_n\], v=[v_1, v_2, \dots, v_n\], \dots], the tuple latexmath:[(x_i, y_i, z_i, \dots)] gets mapped to the values latexmath:[(u_i, v_i, ...)].
-
-All domain arrays and codomain arrays must have the same length.
 
 NOTE: A map on a 1-dimensional domain can be equivalently represented by a terminal of `terminalKind="org.fmi-standard.fmi-ls-struct.map.irregular"` or a terminal with `terminalKind="org.fmi-standard.fmi-ls-struct.map.rectilinearGrid"`.
 
