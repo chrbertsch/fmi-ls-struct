@@ -102,7 +102,7 @@ The manifest file shall be stored inside the FMU at the following path: `/extra/
 [#common-concepts]
 == Common concepts for the representation of maps 
 
-===  Definitions
+=== Definitions
 
 n-d lookup table::
 In the context of this layered standard, an n-d lookup table is a sampled representation of an m-valued function of n input variables latexmath:[(y_1, y_2, \dots, y_m) = F(x_1, x_2, x_3, \dots, x_n)], sampled on points of the n-dimensional domain.
@@ -110,7 +110,7 @@ Such an n-d lookup table could be also called a map from the n-dimensional domai
 
 Each lookup table is represented by a terminal with FMI variables that represent the sampling points of the domain and the sampled values of the codomain.
 
-==== Definition of `terminalKind` attribute values
+==== `terminalKind` attribute values
 
 `org.fmi-standard.fmi-ls-struct.map.rectilinearGrid`::
 for maps sampled on the vertices of a rectilinear grid.
@@ -119,7 +119,7 @@ for maps sampled on the vertices of a rectilinear grid.
 for maps sampled on the vertices of an irregular grid ("point cloud").
 
 
-==== `variableKind` attribute values of terminal member variables:
+==== `variableKind` attribute values of terminal member variables
 
 We want to represent a sampled map from a domain set to a codomain by providing sampled points in the domain set and the values they are mapped to.
 
@@ -149,7 +149,7 @@ If present, a `codomainOutput` variable must be listed directly after the corres
 Additional terminal member variables can be added to the terminal as related variables but if they do not fit into one of the above categories, they shall not have a `variableKind` starting with `org.fmi-standard.fmi-ls-struct`. 
 
 
-==== Definition of map specific `matchingRule`
+==== Map-specific `matchingRule`
 
 The matching rule `org.fmi-standard.fmi-ls-struct.map` should be used for terminals that represent maps.
 
@@ -169,7 +169,7 @@ This layered standard uses "Terminals and Icons" mechanism of FMI 3.0.
 All information is stored in the TerminalsAndIcons.xml file in the TerminalsAndIcons folder of an FMU.
 
 
-==  Maps sampled on rectilinear grids
+== Maps sampled on rectilinear grids
 
 === Definitions
 
@@ -236,7 +236,7 @@ include::examples/terminalsAndIcons.xml[]
 
 
 
-==  Maps sampled on irregular grids ("Point Cloud")
+== Maps sampled on irregular grids ("Point Cloud")
 
 
 === Definitions
