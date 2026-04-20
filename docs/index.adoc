@@ -245,6 +245,10 @@ include::examples/terminalsAndIcons.xml[]
 
 == Maps sampled on irregular grids ("Point Cloud")
 
+Irregular maps represent sampled functions at explicitly listed domain points.
+This representation is intended for data sets that do not lie on a complete rectilinear grid, for example measurements whose sample points do not form a complete Cartesian product of per-dimension sampling vectors, or sparse calibration points.
+Compared to rectilinear maps, irregular maps are more general because they can describe arbitrary point clouds; however, they do not implicitly provide per-dimension grid structure.
+
 
 === Definitions
 
