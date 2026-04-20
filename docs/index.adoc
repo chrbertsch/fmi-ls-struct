@@ -131,7 +131,7 @@ The `causality` of such a variable is `parameter` if the sampling points are mea
 Optionally, for each `domain` variable at most one variable can be referenced that represents the current operating point (along this dimension).
 The `causality` of such a variable can be `input`, `output` or `local` (i.e. the operating point may be provided externally, computed internally, or exposed as an observable). +
 If present, this variable must be listed directly after the corresponding domain variable. +
-The domain_input isn't required to be a scalar, it could be variable with several dimensions.
+The `domainInput` variable is not required to be a scalar; it may have multiple dimensions.
 However the size of each `domainInput` variable must be the same for each domain: For nonscalar inputs latexmath:[v=[v_1,\dots,v_n\], w=[w_1, \dots, w_n\], \dots] the function is evaluated element-wise and we get an output vector latexmath:[z=[f(v_1, w_1, \dots), \dots, f(v_n, w_n, \dots)]].
 The indices latexmath:[1, \dots, n] are the serialization indices of the nonscalar input variable and n is the product of dimension sizes.
 These indices are not related to the indices of the domain arrays.
