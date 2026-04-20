@@ -269,7 +269,9 @@ and codomains latexmath:[u=[u_1, u_2, \dots, u_n\], v=[v_1, v_2, \dots, v_n\], \
 
 NOTE: A map on a 1-dimensional domain can be equivalently represented by a terminal of `terminalKind="org.fmi-standard.fmi-ls-struct.map.irregular"` or a terminal with `terminalKind="org.fmi-standard.fmi-ls-struct.map.rectilinearGrid"`.
 
-NOTE: Any n-d lookup table that can be described with `terminalKind="org.fmi-standard.fmi-ls-struct.map.rectilinearGrid"` could be also represented by an n-d lookup table with `terminalKind="org.fmi-standard.fmi-ls-struct.map.irregular"`.
+NOTE: Any n-d lookup table that can be described with `terminalKind="org.fmi-standard.fmi-ls-struct.map.rectilinearGrid"` can also be represented by an n-d lookup table with `terminalKind="org.fmi-standard.fmi-ls-struct.map.irregular"`.
+
+NOTE: The reverse is not true in general. An irregular map can only be represented as `terminalKind="org.fmi-standard.fmi-ls-struct.map.rectilinearGrid"` if its sampled domain points form a complete Cartesian product of per-dimension sampling vectors.
 
 === 3-d example of a lookup table on an irregular grid
 
