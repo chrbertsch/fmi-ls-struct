@@ -54,9 +54,15 @@ NOTE: Especially examples are defined in this style.
 
 === Rough Outline of the Approach
 
-FMI 3.0 https://fmi-standard.org/docs/3.0/#fmiTerminalsAndIcons[Terminals] are used to define groups of variables, especially parameters.
+The concept of this layered standard can be summarized as follows:
 
-A special kind of parameter group defines maps on rectilinear grids (with additional semantic meaning).
+* In `modelDescription.xml`, an FMU defines the variables that represent domain sampling points and codomain values.
+* In `TerminalsAndIcons.xml`, these variables are grouped in https://fmi-standard.org/docs/3.0/#fmiTerminalsAndIcons[Terminals] using:
+** `terminalKind` to describe the map type (for example rectilinear grid or irregular grid),
+** `variableKind` to label each terminal member (`domain`, `domainInput`, `codomain`, `codomainOutput`), and
+** `matchingRule` to describe how map terminals could connected.
+* Importing tools read the manifest and terminal metadata to provide map-aware handling (for example map-oriented grouping/visualization of variables and ).
+
 
 == Layered Standard Manifest File
 
