@@ -170,6 +170,9 @@ Requirements for matching:
 
 NOTE: This indicates that the variableKind of the member must be considered for the connection of the individual members of the terminal.
 
+Related variables are not considered by the map matching rule.
+Tools may use them for user interface support or algorithm configuration, but they should not be required for map compatibility.
+
 === Structure of the FMU archive
 
 This layered standard uses "Terminals and Icons" mechanism of FMI 3.0.
