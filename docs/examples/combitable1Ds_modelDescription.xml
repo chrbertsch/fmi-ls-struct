@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fmiModelDescription
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  fmiVersion="3.0.1"
+  fmiVersion="3.0.2"
   modelName="TestTables.ct1d"
   instantiationToken="{47a5ab03-6c05-4c75-b3f3-bac3165850d2}"
   generationTool="Dymola Version 2026x Dev 3, 2025-06-18 (Co-simulation using Cvode)"
