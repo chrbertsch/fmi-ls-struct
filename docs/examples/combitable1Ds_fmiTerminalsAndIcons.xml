@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fmiTerminalsAndIcons
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  fmiVersion="3.0.1">
+  fmiVersion="3.0.2">
   <Terminals>
     <Terminal
       name="CombiTable1Ds"
