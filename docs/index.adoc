@@ -33,7 +33,10 @@ The licenses text can be found in the link:LICENSE.txt[LICENSE.txt] file that ac
 === Motivation 
 
 For many use cases, the grouping of variables gives the user a better overview about the usage of variables. For certain groupings the importing tool might be able to provide a more user-friendly interface.
-FMUs might use maps/functions sampled on the vertices of a grid to calculate output values. The values at these sampling points and even the locations of the sampling points might get exposed as parameter variables of the FMU to allow calibrations. However, the FMI standard only defines n-dimensional array variables but doesn't define any relation between these variables. This layered standard defines how to group variables to represent maps.
+FMUs might use maps/functions sampled on the vertices of a grid to calculate output values. 
+The values at these sampling points and even the locations of the sampling points might get exposed as parameter variables of the FMU to allow calibrations. 
+However, the FMI standard only defines n-dimensional array variables but doesn't define any relation between these variables. 
+This layered standard defines how to group variables to represent maps.
 
 This layered standard uses terminals of the FMI 3.0 standard to represent structures like maps by grouping variables in terminals. 
 Terminals are used to group variables and already define means to connect its member variables between FMUs. 
